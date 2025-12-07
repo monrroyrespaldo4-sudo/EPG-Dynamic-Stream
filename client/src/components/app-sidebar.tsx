@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { LayoutDashboard, Tv, FileCode, Settings } from "lucide-react";
+import { LayoutDashboard, Tv, FileCode, Settings, Globe } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -23,6 +23,11 @@ const menuItems = [
     title: "Canales",
     url: "/channels",
     icon: Tv,
+  },
+  {
+    title: "Fuentes Externas",
+    url: "/external-sources",
+    icon: Globe,
   },
   {
     title: "Exportar EPG",

@@ -1,4 +1,4 @@
-import type { Channel, InsertChannel, EpgConfig } from "@shared/schema";
+import type { Channel, InsertChannel, EpgConfig, ExternalEpgSource, InsertExternalEpgSource } from "@shared/schema";
 import { randomUUID } from "crypto";
 
 export interface IStorage {
@@ -9,11 +9,17 @@ export interface IStorage {
   deleteChannel(id: string): Promise<boolean>;
   getEpgConfig(): Promise<EpgConfig>;
   updateEpgConfig(config: Partial<EpgConfig>): Promise<EpgConfig>;
+  getExternalSources(): Promise<ExternalEpgSource[]>;
+  getExternalSource(id: string): Promise<ExternalEpgSource | undefined>;
+  createExternalSource(source: InsertExternalEpgSource): Promise<ExternalEpgSource>;
+  updateExternalSource(id: string, source: Partial<InsertExternalEpgSource>): Promise<ExternalEpgSource | undefined>;
+  deleteExternalSource(id: string): Promise<boolean>;
 }
 
 export class MemStorage implements IStorage {
   private channels: Map<string, Channel>;
   private epgConfig: EpgConfig;
+  private externalSources: Map<string, ExternalEpgSource>;
 
   constructor() {
     this.channels = new Map();
@@ -21,6 +27,7 @@ export class MemStorage implements IStorage {
       lastGenerated: null,
       xmlUrl: null,
     };
+    this.externalSources = new Map();
   }
 
   async getChannels(): Promise<Channel[]> {
@@ -61,6 +68,34 @@ export class MemStorage implements IStorage {
   async updateEpgConfig(config: Partial<EpgConfig>): Promise<EpgConfig> {
     this.epgConfig = { ...this.epgConfig, ...config };
     return this.epgConfig;
+  }
+
+  async getExternalSources(): Promise<ExternalEpgSource[]> {
+    return Array.from(this.externalSources.values());
+  }
+
+  async getExternalSource(id: string): Promise<ExternalEpgSource | undefined> {
+    return this.externalSources.get(id);
+  }
+
+  async createExternalSource(insertSource: InsertExternalEpgSource): Promise<ExternalEpgSource> {
+    const id = randomUUID();
+    const source: ExternalEpgSource = { ...insertSource, id };
+    this.externalSources.set(id, source);
+    return source;
+  }
+
+  async updateExternalSource(id: string, updates: Partial<InsertExternalEpgSource>): Promise<ExternalEpgSource | undefined> {
+    const existing = this.externalSources.get(id);
+    if (!existing) return undefined;
+
+    const updated: ExternalEpgSource = { ...existing, ...updates };
+    this.externalSources.set(id, updated);
+    return updated;
+  }
+
+  async deleteExternalSource(id: string): Promise<boolean> {
+    return this.externalSources.delete(id);
   }
 }
 

@@ -15,19 +15,25 @@ import {
   Tv,
   Clock,
   AlertCircle,
+  Globe,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { queryClient, apiRequest } from "@/lib/queryClient";
-import type { Channel, EpgConfig } from "@shared/schema";
+import type { Channel, EpgConfig, ExternalEpgSource } from "@shared/schema";
 
 export default function ExportPage() {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
   const [selectedChannels, setSelectedChannels] = useState<string[]>([]);
+  const [selectedExternalSources, setSelectedExternalSources] = useState<string[]>([]);
   const [xmlPreview, setXmlPreview] = useState<string | null>(null);
 
   const { data: channels, isLoading: channelsLoading } = useQuery<Channel[]>({
     queryKey: ["/api/channels"],
+  });
+
+  const { data: externalSources, isLoading: externalSourcesLoading } = useQuery<ExternalEpgSource[]>({
+    queryKey: ["/api/external-sources"],
   });
 
   const { data: epgConfig, isLoading: configLoading } = useQuery<EpgConfig>({
@@ -35,8 +41,8 @@ export default function ExportPage() {
   });
 
   const generateMutation = useMutation({
-    mutationFn: async (channelIds: string[]) => {
-      const response = await apiRequest("POST", "/api/epg/generate", { channelIds });
+    mutationFn: async (params: { channelIds: string[]; externalSourceIds: string[] }) => {
+      const response = await apiRequest("POST", "/api/epg/generate", params);
       const data = await response.json();
       return data;
     },
@@ -75,16 +81,34 @@ export default function ExportPage() {
     );
   };
 
+  const handleToggleExternalSource = (sourceId: string) => {
+    setSelectedExternalSources((prev) =>
+      prev.includes(sourceId)
+        ? prev.filter((id) => id !== sourceId)
+        : [...prev, sourceId]
+    );
+  };
+
+  const activeExternalSources = externalSources?.filter((s) => s.isActive) || [];
+
+  const handleSelectAllExternalSources = () => {
+    if (selectedExternalSources.length === activeExternalSources.length) {
+      setSelectedExternalSources([]);
+    } else {
+      setSelectedExternalSources(activeExternalSources.map((s) => s.id));
+    }
+  };
+
   const handleGenerate = () => {
-    if (selectedChannels.length === 0) {
+    if (selectedChannels.length === 0 && selectedExternalSources.length === 0) {
       toast({
-        title: "Selecciona canales",
-        description: "Debes seleccionar al menos un canal para generar el EPG.",
+        title: "Selecciona fuentes",
+        description: "Debes seleccionar al menos un canal o una fuente externa para generar el EPG.",
         variant: "destructive",
       });
       return;
     }
-    generateMutation.mutate(selectedChannels);
+    generateMutation.mutate({ channelIds: selectedChannels, externalSourceIds: selectedExternalSources });
   };
 
   const copyToClipboard = async () => {
@@ -176,24 +200,6 @@ export default function ExportPage() {
                     ))}
                   </div>
                 </ScrollArea>
-                <Button
-                  onClick={handleGenerate}
-                  disabled={generateMutation.isPending || selectedChannels.length === 0}
-                  className="w-full"
-                  data-testid="button-generate-epg"
-                >
-                  {generateMutation.isPending ? (
-                    <>
-                      <RefreshCw className="mr-2 h-4 w-4 animate-spin" />
-                      Generando...
-                    </>
-                  ) : (
-                    <>
-                      <FileCode className="mr-2 h-4 w-4" />
-                      Generar EPG XML
-                    </>
-                  )}
-                </Button>
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center py-8 text-center">
@@ -212,6 +218,104 @@ export default function ExportPage() {
             )}
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Globe className="h-5 w-5" />
+              Fuentes Externas
+            </CardTitle>
+            <CardDescription>
+              Incluye programación de fuentes JSON externas
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            {externalSourcesLoading ? (
+              <div className="space-y-3">
+                {[...Array(2)].map((_, i) => (
+                  <Skeleton key={i} className="h-12 w-full" />
+                ))}
+              </div>
+            ) : activeExternalSources.length > 0 ? (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <Label className="text-sm text-muted-foreground">
+                    {selectedExternalSources.length} de {activeExternalSources.length} seleccionadas
+                  </Label>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={handleSelectAllExternalSources}
+                    data-testid="button-select-all-external"
+                  >
+                    {selectedExternalSources.length === activeExternalSources.length
+                      ? "Deseleccionar todas"
+                      : "Seleccionar todas"}
+                  </Button>
+                </div>
+                <ScrollArea className="h-[200px] rounded-lg border p-4">
+                  <div className="space-y-3">
+                    {activeExternalSources.map((source) => (
+                      <div
+                        key={source.id}
+                        className="flex items-center gap-3 rounded-lg p-3 hover-elevate"
+                      >
+                        <Checkbox
+                          id={source.id}
+                          checked={selectedExternalSources.includes(source.id)}
+                          onCheckedChange={() => handleToggleExternalSource(source.id)}
+                          data-testid={`checkbox-source-${source.id}`}
+                        />
+                        <div className="flex-1 min-w-0">
+                          <Label
+                            htmlFor={source.id}
+                            className="font-medium cursor-pointer block truncate"
+                          >
+                            {source.name}
+                          </Label>
+                          <p className="text-xs text-muted-foreground truncate">
+                            {source.channelName}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </ScrollArea>
+              </div>
+            ) : (
+              <div className="flex flex-col items-center justify-center py-6 text-center">
+                <p className="text-sm text-muted-foreground mb-4">
+                  No hay fuentes externas activas
+                </p>
+                <Button variant="outline" asChild>
+                  <a href="/external-sources" data-testid="link-go-to-external-sources">
+                    Agregar Fuentes
+                  </a>
+                </Button>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+
+        <Button
+          onClick={handleGenerate}
+          disabled={generateMutation.isPending || (selectedChannels.length === 0 && selectedExternalSources.length === 0)}
+          className="w-full"
+          size="lg"
+          data-testid="button-generate-epg"
+        >
+          {generateMutation.isPending ? (
+            <>
+              <RefreshCw className="mr-2 h-4 w-4 animate-spin" />
+              Generando...
+            </>
+          ) : (
+            <>
+              <FileCode className="mr-2 h-4 w-4" />
+              Generar EPG XML ({selectedChannels.length + selectedExternalSources.length} fuentes)
+            </>
+          )}
+        </Button>
 
         <div className="space-y-6">
           <Card>

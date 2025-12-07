@@ -25,6 +25,43 @@ export const epgConfigSchema = z.object({
 
 export type EpgConfig = z.infer<typeof epgConfigSchema>;
 
+export const externalEpgSourceSchema = z.object({
+  id: z.string(),
+  name: z.string().min(1, "El nombre es requerido"),
+  url: z.string().url("URL inválida"),
+  channelId: z.string().min(1, "El ID del canal es requerido"),
+  logoUrl: z.string().url("URL de logo inválida").optional().or(z.literal("")),
+  isActive: z.boolean().default(true),
+});
+
+export const insertExternalEpgSourceSchema = externalEpgSourceSchema.omit({ id: true });
+
+export type ExternalEpgSource = z.infer<typeof externalEpgSourceSchema>;
+export type InsertExternalEpgSource = z.infer<typeof insertExternalEpgSourceSchema>;
+
+export interface ExternalEpgProgram {
+  hora: string;
+  titulo: string;
+  capitulo?: string;
+  descripcion?: string;
+  imagenUrl?: string;
+  infoUrl?: string;
+  genero?: string;
+  enVivo?: boolean;
+}
+
+export interface ExternalEpgDay {
+  fecha: string;
+  diaSemana: string;
+  programas: ExternalEpgProgram[];
+}
+
+export interface ExternalEpgData {
+  channelName: string;
+  channelCode: number;
+  dias: ExternalEpgDay[];
+}
+
 export const categories = [
   "Deportes",
   "Noticias",

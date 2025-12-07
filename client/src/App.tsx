@@ -10,6 +10,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import Dashboard from "@/pages/dashboard";
 import ChannelsPage from "@/pages/channels";
 import ExportPage from "@/pages/export";
+import ExternalSourcesPage from "@/pages/external-sources";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Dashboard} />
       <Route path="/channels" component={ChannelsPage} />
+      <Route path="/external-sources" component={ExternalSourcesPage} />
       <Route path="/export" component={ExportPage} />
       <Route component={NotFound} />
     </Switch>
