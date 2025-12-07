@@ -20,14 +20,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { insertChannelSchema, categories, type Channel, type InsertChannel } from "@shared/schema";
+import { insertChannelSchema, type Channel, type InsertChannel } from "@shared/schema";
 import { Loader2 } from "lucide-react";
 
 interface ChannelDialogProps {
@@ -148,49 +141,23 @@ export function ChannelDialog({
                   )}
                 />
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <FormField
-                  control={form.control}
-                  name="logoUrl"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>URL del Logo (opcional)</FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="https://ejemplo.com/logo.png"
-                          {...field}
-                          data-testid="input-channel-logo"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="category"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Categoría</FormLabel>
-                      <Select onValueChange={field.onChange} value={field.value}>
-                        <FormControl>
-                          <SelectTrigger data-testid="select-category">
-                            <SelectValue placeholder="Selecciona una categoría" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {categories.map((cat) => (
-                            <SelectItem key={cat} value={cat} data-testid={`option-${cat}`}>
-                              {cat}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
+              <FormField
+                control={form.control}
+                name="logoUrl"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>URL del Logo (opcional)</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="https://ejemplo.com/logo.png"
+                        {...field}
+                        data-testid="input-channel-logo"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
             </div>
 
             <div className="border-t pt-6 space-y-4">
