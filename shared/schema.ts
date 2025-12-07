@@ -62,6 +62,28 @@ export interface ExternalEpgData {
   dias: ExternalEpgDay[];
 }
 
+export interface External13GoEvent {
+  id?: string;
+  programId?: string;
+  beginTime: string;
+  endTime: string;
+  title: string;
+  synopsis?: string;
+  genre?: string[];
+  episodeTitle?: string;
+  pictures?: { photo?: string; poster?: string; cover?: string; background?: string };
+  rating?: string;
+}
+
+export interface External13GoData {
+  channel: string;
+  channelCode: string;
+  updated?: string;
+  events: External13GoEvent[];
+}
+
+export type ExternalEpgDataUnion = ExternalEpgData | External13GoData;
+
 export const categories = [
   "Deportes",
   "Noticias",

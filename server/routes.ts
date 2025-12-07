@@ -1,7 +1,7 @@
 import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertChannelSchema, insertExternalEpgSourceSchema, type ExternalEpgData, type ExternalEpgSource } from "@shared/schema";
+import { insertChannelSchema, insertExternalEpgSourceSchema, type ExternalEpgData, type External13GoData, type ExternalEpgDataUnion, type ExternalEpgSource } from "@shared/schema";
 import { z } from "zod";
 import * as fs from "fs";
 import * as path from "path";
@@ -44,16 +44,24 @@ function parseTimeHM(timeStr: string): { hours: number; minutes: number } | null
   };
 }
 
-async function fetchExternalEpgData(url: string): Promise<ExternalEpgData | null> {
+async function fetchExternalEpgData(url: string): Promise<ExternalEpgDataUnion | null> {
   try {
     const response = await fetch(url);
     if (!response.ok) return null;
     const data = await response.json();
-    return data as ExternalEpgData;
+    return data as ExternalEpgDataUnion;
   } catch (error) {
     console.error("Error fetching external EPG:", error);
     return null;
   }
+}
+
+function isExternal13GoData(data: ExternalEpgDataUnion): data is External13GoData {
+  return data && Array.isArray((data as External13GoData).events);
+}
+
+function isExternalTvDalDiaData(data: ExternalEpgDataUnion): data is ExternalEpgData {
+  return data && Array.isArray((data as ExternalEpgData).dias);
 }
 
 interface ProgramEntry {
@@ -117,47 +125,22 @@ async function generateEpgXmlWithExternal(
     const epgData = await fetchExternalEpgData(source.url);
     if (!epgData) continue;
 
-    allChannels.push({
-      channelId: source.channelId,
-      name: source.name || epgData.channelName,
-      logoUrl: source.logoUrl,
-    });
+    if (isExternal13GoData(epgData)) {
+      allChannels.push({
+        channelId: source.channelId,
+        name: source.name || epgData.channel,
+        logoUrl: source.logoUrl,
+      });
 
-    const todayStr = `${now.getDate().toString().padStart(2, "0")}-${(now.getMonth() + 1).toString().padStart(2, "0")}-${now.getFullYear()}`;
-    
-    for (const dia of epgData.dias) {
-      const diaDate = parseDateDMY(dia.fecha);
-      if (!diaDate) continue;
+      for (const event of epgData.events) {
+        const startTime = new Date(event.beginTime);
+        const endTime = new Date(event.endTime);
+        
+        if (isNaN(startTime.getTime()) || isNaN(endTime.getTime())) continue;
 
-      for (let i = 0; i < dia.programas.length; i++) {
-        const prog = dia.programas[i];
-        const time = parseTimeHM(prog.hora);
-        if (!time) continue;
-
-        const startTime = new Date(diaDate);
-        startTime.setHours(time.hours, time.minutes, 0, 0);
-
-        let endTime: Date;
-        if (i + 1 < dia.programas.length) {
-          const nextTime = parseTimeHM(dia.programas[i + 1].hora);
-          if (nextTime) {
-            endTime = new Date(diaDate);
-            if (nextTime.hours < time.hours) {
-              endTime.setDate(endTime.getDate() + 1);
-            }
-            endTime.setHours(nextTime.hours, nextTime.minutes, 0, 0);
-          } else {
-            endTime = new Date(startTime);
-            endTime.setHours(endTime.getHours() + 1);
-          }
-        } else {
-          endTime = new Date(startTime);
-          endTime.setHours(endTime.getHours() + 1);
-        }
-
-        let title = prog.titulo;
-        if (prog.capitulo) {
-          title += ` - ${prog.capitulo}`;
+        let title = event.title;
+        if (event.episodeTitle && event.episodeTitle !== event.title) {
+          title = event.episodeTitle;
         }
 
         allPrograms.push({
@@ -165,9 +148,61 @@ async function generateEpgXmlWithExternal(
           start: startTime,
           stop: endTime,
           title,
-          description: prog.descripcion,
-          category: prog.genero,
+          description: event.synopsis,
+          category: event.genre?.[0],
         });
+      }
+    } else if (isExternalTvDalDiaData(epgData)) {
+      allChannels.push({
+        channelId: source.channelId,
+        name: source.name || epgData.channelName,
+        logoUrl: source.logoUrl,
+      });
+
+      for (const dia of epgData.dias) {
+        const diaDate = parseDateDMY(dia.fecha);
+        if (!diaDate) continue;
+
+        for (let i = 0; i < dia.programas.length; i++) {
+          const prog = dia.programas[i];
+          const time = parseTimeHM(prog.hora);
+          if (!time) continue;
+
+          const startTime = new Date(diaDate);
+          startTime.setHours(time.hours, time.minutes, 0, 0);
+
+          let endTime: Date;
+          if (i + 1 < dia.programas.length) {
+            const nextTime = parseTimeHM(dia.programas[i + 1].hora);
+            if (nextTime) {
+              endTime = new Date(diaDate);
+              if (nextTime.hours < time.hours) {
+                endTime.setDate(endTime.getDate() + 1);
+              }
+              endTime.setHours(nextTime.hours, nextTime.minutes, 0, 0);
+            } else {
+              endTime = new Date(startTime);
+              endTime.setHours(endTime.getHours() + 1);
+            }
+          } else {
+            endTime = new Date(startTime);
+            endTime.setHours(endTime.getHours() + 1);
+          }
+
+          let title = prog.titulo;
+          if (prog.capitulo) {
+            title += ` - ${prog.capitulo}`;
+          }
+
+          allPrograms.push({
+            channelId: source.channelId,
+            start: startTime,
+            stop: endTime,
+            title,
+            description: prog.descripcion,
+            category: prog.genero,
+          });
+        }
       }
     }
   }
@@ -328,12 +363,24 @@ export async function registerRoutes(
         return res.status(400).json({ error: "No se pudo obtener datos de la URL" });
       }
 
-      res.json({
-        success: true,
-        channelName: epgData.channelName,
-        daysCount: epgData.dias.length,
-        programsCount: epgData.dias.reduce((acc, d) => acc + d.programas.length, 0),
-      });
+      if (isExternal13GoData(epgData)) {
+        res.json({
+          success: true,
+          format: "13Go",
+          channelName: epgData.channel,
+          eventsCount: epgData.events.length,
+        });
+      } else if (isExternalTvDalDiaData(epgData)) {
+        res.json({
+          success: true,
+          format: "TVDalDía",
+          channelName: epgData.channelName,
+          daysCount: epgData.dias.length,
+          programsCount: epgData.dias.reduce((acc, d) => acc + d.programas.length, 0),
+        });
+      } else {
+        res.status(400).json({ error: "Formato de datos no reconocido" });
+      }
     } catch (error) {
       res.status(500).json({ error: "Error al probar la fuente externa" });
     }
