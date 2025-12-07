@@ -8,13 +8,20 @@ import * as path from "path";
 
 function formatDateXMLTV(date: Date): string {
   const pad = (n: number) => n.toString().padStart(2, "0");
-  const year = date.getUTCFullYear();
-  const month = pad(date.getUTCMonth() + 1);
-  const day = pad(date.getUTCDate());
-  const hours = pad(date.getUTCHours());
-  const minutes = pad(date.getUTCMinutes());
-  const seconds = pad(date.getUTCSeconds());
-  return `${year}${month}${day}${hours}${minutes}${seconds} +0000`;
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+  const seconds = pad(date.getSeconds());
+  
+  const tzOffset = -date.getTimezoneOffset();
+  const tzHours = Math.floor(Math.abs(tzOffset) / 60);
+  const tzMinutes = Math.abs(tzOffset) % 60;
+  const tzSign = tzOffset >= 0 ? "+" : "-";
+  const tzString = `${tzSign}${pad(tzHours)}${pad(tzMinutes)}`;
+  
+  return `${year}${month}${day}${hours}${minutes}${seconds} ${tzString}`;
 }
 
 function escapeXml(text: string): string {
