@@ -1,37 +1,66 @@
-import { type User, type InsertUser } from "@shared/schema";
+import type { Channel, InsertChannel, EpgConfig } from "@shared/schema";
 import { randomUUID } from "crypto";
 
-// modify the interface with any CRUD methods
-// you might need
-
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  getChannels(): Promise<Channel[]>;
+  getChannel(id: string): Promise<Channel | undefined>;
+  createChannel(channel: InsertChannel): Promise<Channel>;
+  updateChannel(id: string, channel: Partial<InsertChannel>): Promise<Channel | undefined>;
+  deleteChannel(id: string): Promise<boolean>;
+  getEpgConfig(): Promise<EpgConfig>;
+  updateEpgConfig(config: Partial<EpgConfig>): Promise<EpgConfig>;
 }
 
 export class MemStorage implements IStorage {
-  private users: Map<string, User>;
+  private channels: Map<string, Channel>;
+  private epgConfig: EpgConfig;
 
   constructor() {
-    this.users = new Map();
+    this.channels = new Map();
+    this.epgConfig = {
+      lastGenerated: null,
+      xmlUrl: null,
+    };
   }
 
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+  async getChannels(): Promise<Channel[]> {
+    return Array.from(this.channels.values());
   }
 
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+  async getChannel(id: string): Promise<Channel | undefined> {
+    return this.channels.get(id);
   }
 
-  async createUser(insertUser: InsertUser): Promise<User> {
+  async createChannel(insertChannel: InsertChannel): Promise<Channel> {
     const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+    const channel: Channel = { ...insertChannel, id };
+    this.channels.set(id, channel);
+    return channel;
+  }
+
+  async updateChannel(id: string, updates: Partial<InsertChannel>): Promise<Channel | undefined> {
+    const existing = this.channels.get(id);
+    if (!existing) return undefined;
+
+    const updated: Channel = { ...existing, ...updates };
+    if (updates.program) {
+      updated.program = { ...existing.program, ...updates.program };
+    }
+    this.channels.set(id, updated);
+    return updated;
+  }
+
+  async deleteChannel(id: string): Promise<boolean> {
+    return this.channels.delete(id);
+  }
+
+  async getEpgConfig(): Promise<EpgConfig> {
+    return this.epgConfig;
+  }
+
+  async updateEpgConfig(config: Partial<EpgConfig>): Promise<EpgConfig> {
+    this.epgConfig = { ...this.epgConfig, ...config };
+    return this.epgConfig;
   }
 }
 
