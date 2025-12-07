@@ -46,10 +46,8 @@ export function ChannelDialog({
       logoUrl: "",
       category: "",
       isActive: true,
-      program: {
-        title: "",
-        description: "",
-      },
+      programTitle: "",
+      programDescription: "",
     },
   });
 
@@ -61,10 +59,8 @@ export function ChannelDialog({
         logoUrl: channel.logoUrl || "",
         category: channel.category,
         isActive: channel.isActive,
-        program: {
-          title: channel.program.title,
-          description: channel.program.description || "",
-        },
+        programTitle: channel.programTitle,
+        programDescription: channel.programDescription || "",
       });
     } else {
       form.reset({
@@ -73,10 +69,8 @@ export function ChannelDialog({
         logoUrl: "",
         category: "",
         isActive: true,
-        program: {
-          title: "",
-          description: "",
-        },
+        programTitle: "",
+        programDescription: "",
       });
     }
   }, [channel, form, open]);
@@ -151,7 +145,25 @@ export function ChannelDialog({
                       <Input
                         placeholder="https://ejemplo.com/logo.png"
                         {...field}
+                        value={field.value || ""}
                         data-testid="input-channel-logo"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="category"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Categoría</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="Ej: Deportes, Noticias, Entretenimiento"
+                        {...field}
+                        data-testid="input-channel-category"
                       />
                     </FormControl>
                     <FormMessage />
@@ -169,7 +181,7 @@ export function ChannelDialog({
               </div>
               <FormField
                 control={form.control}
-                name="program.title"
+                name="programTitle"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Título del Programa</FormLabel>
@@ -186,7 +198,7 @@ export function ChannelDialog({
               />
               <FormField
                 control={form.control}
-                name="program.description"
+                name="programDescription"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Descripción (opcional)</FormLabel>
@@ -196,6 +208,7 @@ export function ChannelDialog({
                         className="resize-none"
                         rows={3}
                         {...field}
+                        value={field.value || ""}
                         data-testid="input-program-description"
                       />
                     </FormControl>

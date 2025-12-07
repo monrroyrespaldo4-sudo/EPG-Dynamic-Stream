@@ -1,22 +1,52 @@
 import { z } from "zod";
+import { pgTable, text, boolean, jsonb, serial } from "drizzle-orm/pg-core";
+import { createInsertSchema } from "drizzle-zod";
 
-export const channelSchema = z.object({
-  id: z.string(),
-  name: z.string().min(1, "El nombre es requerido"),
-  channelId: z.string().min(1, "El ID del canal es requerido"),
-  logoUrl: z.string().url("URL de logo inválida").optional().or(z.literal("")),
-  category: z.string().min(1, "La categoría es requerida"),
-  isActive: z.boolean().default(true),
-  program: z.object({
-    title: z.string().min(1, "El título del programa es requerido"),
-    description: z.string().optional(),
-  }),
+export const channels = pgTable("channels", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  channelId: text("channel_id").notNull(),
+  logoUrl: text("logo_url"),
+  category: text("category").notNull(),
+  isActive: boolean("is_active").notNull().default(true),
+  programTitle: text("program_title").notNull(),
+  programDescription: text("program_description"),
 });
 
-export const insertChannelSchema = channelSchema.omit({ id: true });
+export const externalSources = pgTable("external_sources", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  url: text("url").notNull(),
+  channelId: text("channel_id").notNull(),
+  logoUrl: text("logo_url"),
+  isActive: boolean("is_active").notNull().default(true),
+});
 
-export type Channel = z.infer<typeof channelSchema>;
+export const epgConfigs = pgTable("epg_configs", {
+  id: serial("id").primaryKey(),
+  lastGenerated: text("last_generated"),
+  xmlUrl: text("xml_url"),
+});
+
+export const insertChannelSchema = createInsertSchema(channels).omit({ id: true });
+export const insertExternalSourceSchema = createInsertSchema(externalSources).omit({ id: true });
+export const insertExternalEpgSourceSchema = insertExternalSourceSchema;
+
+export type Channel = typeof channels.$inferSelect;
 export type InsertChannel = z.infer<typeof insertChannelSchema>;
+export type ExternalEpgSource = typeof externalSources.$inferSelect;
+export type InsertExternalEpgSource = z.infer<typeof insertExternalSourceSchema>;
+
+export const channelSchema = z.object({
+  id: z.number(),
+  name: z.string().min(1, "El nombre es requerido"),
+  channelId: z.string().min(1, "El ID del canal es requerido"),
+  logoUrl: z.string().url("URL de logo inválida").optional().nullable(),
+  category: z.string().min(1, "La categoría es requerida"),
+  isActive: z.boolean().default(true),
+  programTitle: z.string().min(1, "El título del programa es requerido"),
+  programDescription: z.string().optional().nullable(),
+});
 
 export const epgConfigSchema = z.object({
   lastGenerated: z.string().nullable(),
@@ -26,18 +56,13 @@ export const epgConfigSchema = z.object({
 export type EpgConfig = z.infer<typeof epgConfigSchema>;
 
 export const externalEpgSourceSchema = z.object({
-  id: z.string(),
+  id: z.number(),
   name: z.string().min(1, "El nombre es requerido"),
   url: z.string().url("URL inválida"),
   channelId: z.string().min(1, "El ID del canal es requerido"),
-  logoUrl: z.string().url("URL de logo inválida").optional().or(z.literal("")),
+  logoUrl: z.string().url("URL de logo inválida").optional().nullable(),
   isActive: z.boolean().default(true),
 });
-
-export const insertExternalEpgSourceSchema = externalEpgSourceSchema.omit({ id: true });
-
-export type ExternalEpgSource = z.infer<typeof externalEpgSourceSchema>;
-export type InsertExternalEpgSource = z.infer<typeof insertExternalEpgSourceSchema>;
 
 export interface ExternalEpgProgram {
   hora: string;

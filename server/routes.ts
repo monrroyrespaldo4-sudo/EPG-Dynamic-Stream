@@ -1,7 +1,7 @@
 import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertChannelSchema, insertExternalEpgSourceSchema, type ExternalEpgData, type External13GoData, type ExternalEpgDataUnion, type ExternalEpgSource } from "@shared/schema";
+import { insertChannelSchema, insertExternalEpgSourceSchema, type ExternalEpgData, type External13GoData, type ExternalEpgDataUnion, type ExternalEpgSource, type Channel } from "@shared/schema";
 import { z } from "zod";
 import * as fs from "fs";
 import * as path from "path";
@@ -76,17 +76,11 @@ interface ProgramEntry {
 interface ChannelEntry {
   channelId: string;
   name: string;
-  logoUrl?: string;
+  logoUrl?: string | null;
 }
 
 async function generateEpgXmlWithExternal(
-  channels: Array<{
-    id: string;
-    channelId: string;
-    name: string;
-    logoUrl?: string;
-    program: { title: string; description?: string };
-  }>,
+  channels: Channel[],
   externalSources: ExternalEpgSource[]
 ): Promise<string> {
   const now = new Date();
@@ -113,8 +107,8 @@ async function generateEpgXmlWithExternal(
         channelId: channel.channelId,
         start: startTime,
         stop: endTime,
-        title: channel.program.title,
-        description: channel.program.description,
+        title: channel.programTitle,
+        description: channel.programDescription || undefined,
       });
     }
   }
@@ -255,7 +249,11 @@ export async function registerRoutes(
   });
 
   app.get("/api/channels/:id", async (req: Request, res: Response) => {
-    const channel = await storage.getChannel(req.params.id);
+    const id = parseInt(req.params.id, 10);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+    const channel = await storage.getChannel(id);
     if (!channel) {
       return res.status(404).json({ error: "Canal no encontrado" });
     }
@@ -277,9 +275,13 @@ export async function registerRoutes(
 
   app.patch("/api/channels/:id", async (req: Request, res: Response) => {
     try {
+      const id = parseInt(req.params.id, 10);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "ID inválido" });
+      }
       const partialSchema = insertChannelSchema.partial();
       const parsed = partialSchema.parse(req.body);
-      const channel = await storage.updateChannel(req.params.id, parsed);
+      const channel = await storage.updateChannel(id, parsed);
       if (!channel) {
         return res.status(404).json({ error: "Canal no encontrado" });
       }
@@ -293,7 +295,11 @@ export async function registerRoutes(
   });
 
   app.delete("/api/channels/:id", async (req: Request, res: Response) => {
-    const deleted = await storage.deleteChannel(req.params.id);
+    const id = parseInt(req.params.id, 10);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+    const deleted = await storage.deleteChannel(id);
     if (!deleted) {
       return res.status(404).json({ error: "Canal no encontrado" });
     }
@@ -306,7 +312,11 @@ export async function registerRoutes(
   });
 
   app.get("/api/external-sources/:id", async (req: Request, res: Response) => {
-    const source = await storage.getExternalSource(req.params.id);
+    const id = parseInt(req.params.id, 10);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+    const source = await storage.getExternalSource(id);
     if (!source) {
       return res.status(404).json({ error: "Fuente externa no encontrada" });
     }
@@ -328,9 +338,13 @@ export async function registerRoutes(
 
   app.patch("/api/external-sources/:id", async (req: Request, res: Response) => {
     try {
+      const id = parseInt(req.params.id, 10);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "ID inválido" });
+      }
       const partialSchema = insertExternalEpgSourceSchema.partial();
       const parsed = partialSchema.parse(req.body);
-      const source = await storage.updateExternalSource(req.params.id, parsed);
+      const source = await storage.updateExternalSource(id, parsed);
       if (!source) {
         return res.status(404).json({ error: "Fuente externa no encontrada" });
       }
@@ -344,7 +358,11 @@ export async function registerRoutes(
   });
 
   app.delete("/api/external-sources/:id", async (req: Request, res: Response) => {
-    const deleted = await storage.deleteExternalSource(req.params.id);
+    const id = parseInt(req.params.id, 10);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+    const deleted = await storage.deleteExternalSource(id);
     if (!deleted) {
       return res.status(404).json({ error: "Fuente externa no encontrada" });
     }
@@ -353,7 +371,11 @@ export async function registerRoutes(
 
   app.post("/api/external-sources/:id/test", async (req: Request, res: Response) => {
     try {
-      const source = await storage.getExternalSource(req.params.id);
+      const id = parseInt(req.params.id, 10);
+      if (isNaN(id)) {
+        return res.status(400).json({ error: "ID inválido" });
+      }
+      const source = await storage.getExternalSource(id);
       if (!source) {
         return res.status(404).json({ error: "Fuente externa no encontrada" });
       }
@@ -402,13 +424,7 @@ export async function registerRoutes(
         return res.status(400).json({ error: "Debe seleccionar al menos un canal o fuente externa" });
       }
 
-      let selectedChannels: Array<{
-        id: string;
-        channelId: string;
-        name: string;
-        logoUrl?: string;
-        program: { title: string; description?: string };
-      }> = [];
+      let selectedChannels: Channel[] = [];
 
       if (hasChannels) {
         const allChannels = await storage.getChannels();

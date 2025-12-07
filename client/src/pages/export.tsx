@@ -24,8 +24,8 @@ import type { Channel, EpgConfig, ExternalEpgSource } from "@shared/schema";
 export default function ExportPage() {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
-  const [selectedChannels, setSelectedChannels] = useState<string[]>([]);
-  const [selectedExternalSources, setSelectedExternalSources] = useState<string[]>([]);
+  const [selectedChannels, setSelectedChannels] = useState<number[]>([]);
+  const [selectedExternalSources, setSelectedExternalSources] = useState<number[]>([]);
   const [xmlPreview, setXmlPreview] = useState<string | null>(null);
 
   const { data: channels, isLoading: channelsLoading } = useQuery<Channel[]>({
@@ -41,7 +41,7 @@ export default function ExportPage() {
   });
 
   const generateMutation = useMutation({
-    mutationFn: async (params: { channelIds: string[]; externalSourceIds: string[] }) => {
+    mutationFn: async (params: { channelIds: number[]; externalSourceIds: number[] }) => {
       const response = await apiRequest("POST", "/api/epg/generate", params);
       const data = await response.json();
       return data;
@@ -73,7 +73,7 @@ export default function ExportPage() {
     }
   };
 
-  const handleToggleChannel = (channelId: string) => {
+  const handleToggleChannel = (channelId: number) => {
     setSelectedChannels((prev) =>
       prev.includes(channelId)
         ? prev.filter((id) => id !== channelId)
@@ -81,7 +81,7 @@ export default function ExportPage() {
     );
   };
 
-  const handleToggleExternalSource = (sourceId: string) => {
+  const handleToggleExternalSource = (sourceId: number) => {
     setSelectedExternalSources((prev) =>
       prev.includes(sourceId)
         ? prev.filter((id) => id !== sourceId)
@@ -180,20 +180,20 @@ export default function ExportPage() {
                         className="flex items-center gap-3 rounded-lg p-3 hover-elevate"
                       >
                         <Checkbox
-                          id={channel.id}
+                          id={`channel-${channel.id}`}
                           checked={selectedChannels.includes(channel.id)}
                           onCheckedChange={() => handleToggleChannel(channel.id)}
                           data-testid={`checkbox-channel-${channel.id}`}
                         />
                         <div className="flex-1 min-w-0">
                           <Label
-                            htmlFor={channel.id}
+                            htmlFor={`channel-${channel.id}`}
                             className="font-medium cursor-pointer block truncate"
                           >
                             {channel.name}
                           </Label>
                           <p className="text-xs text-muted-foreground truncate">
-                            {channel.program.title}
+                            {channel.programTitle}
                           </p>
                         </div>
                       </div>
@@ -261,20 +261,20 @@ export default function ExportPage() {
                         className="flex items-center gap-3 rounded-lg p-3 hover-elevate"
                       >
                         <Checkbox
-                          id={source.id}
+                          id={`source-${source.id}`}
                           checked={selectedExternalSources.includes(source.id)}
                           onCheckedChange={() => handleToggleExternalSource(source.id)}
                           data-testid={`checkbox-source-${source.id}`}
                         />
                         <div className="flex-1 min-w-0">
                           <Label
-                            htmlFor={source.id}
+                            htmlFor={`source-${source.id}`}
                             className="font-medium cursor-pointer block truncate"
                           >
                             {source.name}
                           </Label>
                           <p className="text-xs text-muted-foreground truncate">
-                            {source.channelName}
+                            {source.channelId}
                           </p>
                         </div>
                       </div>

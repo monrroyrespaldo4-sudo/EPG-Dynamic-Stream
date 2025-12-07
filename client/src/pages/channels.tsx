@@ -64,7 +64,7 @@ export default function ChannelsPage() {
   });
 
   const updateMutation = useMutation({
-    mutationFn: async ({ id, data }: { id: string; data: Partial<InsertChannel> }) => {
+    mutationFn: async ({ id, data }: { id: number; data: Partial<InsertChannel> }) => {
       return apiRequest("PATCH", `/api/channels/${id}`, data);
     },
     onSuccess: () => {
@@ -86,7 +86,7 @@ export default function ChannelsPage() {
   });
 
   const deleteMutation = useMutation({
-    mutationFn: async (id: string) => {
+    mutationFn: async (id: number) => {
       return apiRequest("DELETE", `/api/channels/${id}`);
     },
     onSuccess: () => {
@@ -108,7 +108,7 @@ export default function ChannelsPage() {
   });
 
   const toggleActiveMutation = useMutation({
-    mutationFn: async ({ id, isActive }: { id: string; isActive: boolean }) => {
+    mutationFn: async ({ id, isActive }: { id: number; isActive: boolean }) => {
       return apiRequest("PATCH", `/api/channels/${id}`, { isActive });
     },
     onSuccess: () => {
@@ -234,7 +234,7 @@ export default function ChannelsPage() {
                         </Badge>
                       </TableCell>
                       <TableCell className="hidden lg:table-cell text-sm text-muted-foreground">
-                        {channel.program.title}
+                        {channel.programTitle}
                       </TableCell>
                       <TableCell>
                         <Switch
