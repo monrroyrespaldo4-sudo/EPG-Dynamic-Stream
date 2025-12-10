@@ -273,6 +273,7 @@ export async function registerRoutes(
       const channel = await storage.createChannel(parsed);
       res.status(201).json(channel);
     } catch (error) {
+      console.error("Error creating channel:", error);
       if (error instanceof z.ZodError) {
         return res.status(400).json({ error: "Datos inválidos", details: error.errors });
       }
