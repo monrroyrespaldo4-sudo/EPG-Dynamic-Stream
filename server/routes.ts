@@ -271,6 +271,38 @@ export async function registerRoutes(
     try {
       const parsed = insertChannelSchema.parse(req.body);
       const channel = await storage.createChannel(parsed);
+      
+      // Regenerate EPG automatically with all active channels and external sources
+      try {
+        const allChannels = await storage.getChannels();
+        const activeChannels = allChannels.filter(c => c.isActive);
+        const allSources = await storage.getExternalSources();
+        const activeSources = allSources.filter(s => s.isActive);
+        
+        if (activeChannels.length > 0 || activeSources.length > 0) {
+          const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
+          
+          const publicDir = path.join(process.cwd(), "client", "public");
+          if (!fs.existsSync(publicDir)) {
+            fs.mkdirSync(publicDir, { recursive: true });
+          }
+          
+          const xmlFilePath = path.join(publicDir, "epg.xml");
+          fs.writeFileSync(xmlFilePath, xml, "utf-8");
+          
+          const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+          const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+          const xmlUrl = `${protocol}://${host}/epg.xml`;
+          
+          await storage.updateEpgConfig({
+            lastGenerated: new Date().toISOString(),
+            xmlUrl,
+          });
+        }
+      } catch (epgError) {
+        console.error("Error auto-generating EPG:", epgError);
+      }
+      
       res.status(201).json(channel);
     } catch (error) {
       console.error("Error creating channel:", error);
@@ -293,6 +325,38 @@ export async function registerRoutes(
       if (!channel) {
         return res.status(404).json({ error: "Canal no encontrado" });
       }
+      
+      // Regenerate EPG automatically
+      try {
+        const allChannels = await storage.getChannels();
+        const activeChannels = allChannels.filter(c => c.isActive);
+        const allSources = await storage.getExternalSources();
+        const activeSources = allSources.filter(s => s.isActive);
+        
+        if (activeChannels.length > 0 || activeSources.length > 0) {
+          const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
+          
+          const publicDir = path.join(process.cwd(), "client", "public");
+          if (!fs.existsSync(publicDir)) {
+            fs.mkdirSync(publicDir, { recursive: true });
+          }
+          
+          const xmlFilePath = path.join(publicDir, "epg.xml");
+          fs.writeFileSync(xmlFilePath, xml, "utf-8");
+          
+          const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+          const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+          const xmlUrl = `${protocol}://${host}/epg.xml`;
+          
+          await storage.updateEpgConfig({
+            lastGenerated: new Date().toISOString(),
+            xmlUrl,
+          });
+        }
+      } catch (epgError) {
+        console.error("Error auto-generating EPG:", epgError);
+      }
+      
       res.json(channel);
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -311,6 +375,38 @@ export async function registerRoutes(
     if (!deleted) {
       return res.status(404).json({ error: "Canal no encontrado" });
     }
+    
+    // Regenerate EPG automatically
+    try {
+      const allChannels = await storage.getChannels();
+      const activeChannels = allChannels.filter(c => c.isActive);
+      const allSources = await storage.getExternalSources();
+      const activeSources = allSources.filter(s => s.isActive);
+      
+      if (activeChannels.length > 0 || activeSources.length > 0) {
+        const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
+        
+        const publicDir = path.join(process.cwd(), "client", "public");
+        if (!fs.existsSync(publicDir)) {
+          fs.mkdirSync(publicDir, { recursive: true });
+        }
+        
+        const xmlFilePath = path.join(publicDir, "epg.xml");
+        fs.writeFileSync(xmlFilePath, xml, "utf-8");
+        
+        const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+        const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+        const xmlUrl = `${protocol}://${host}/epg.xml`;
+        
+        await storage.updateEpgConfig({
+          lastGenerated: new Date().toISOString(),
+          xmlUrl,
+        });
+      }
+    } catch (epgError) {
+      console.error("Error auto-generating EPG:", epgError);
+    }
+    
     res.status(204).send();
   });
 
@@ -335,6 +431,38 @@ export async function registerRoutes(
     try {
       const parsed = insertExternalEpgSourceSchema.parse(req.body);
       const source = await storage.createExternalSource(parsed);
+      
+      // Regenerate EPG automatically
+      try {
+        const allChannels = await storage.getChannels();
+        const activeChannels = allChannels.filter(c => c.isActive);
+        const allSources = await storage.getExternalSources();
+        const activeSources = allSources.filter(s => s.isActive);
+        
+        if (activeChannels.length > 0 || activeSources.length > 0) {
+          const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
+          
+          const publicDir = path.join(process.cwd(), "client", "public");
+          if (!fs.existsSync(publicDir)) {
+            fs.mkdirSync(publicDir, { recursive: true });
+          }
+          
+          const xmlFilePath = path.join(publicDir, "epg.xml");
+          fs.writeFileSync(xmlFilePath, xml, "utf-8");
+          
+          const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+          const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+          const xmlUrl = `${protocol}://${host}/epg.xml`;
+          
+          await storage.updateEpgConfig({
+            lastGenerated: new Date().toISOString(),
+            xmlUrl,
+          });
+        }
+      } catch (epgError) {
+        console.error("Error auto-generating EPG:", epgError);
+      }
+      
       res.status(201).json(source);
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -356,6 +484,38 @@ export async function registerRoutes(
       if (!source) {
         return res.status(404).json({ error: "Fuente externa no encontrada" });
       }
+      
+      // Regenerate EPG automatically
+      try {
+        const allChannels = await storage.getChannels();
+        const activeChannels = allChannels.filter(c => c.isActive);
+        const allSources = await storage.getExternalSources();
+        const activeSources = allSources.filter(s => s.isActive);
+        
+        if (activeChannels.length > 0 || activeSources.length > 0) {
+          const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
+          
+          const publicDir = path.join(process.cwd(), "client", "public");
+          if (!fs.existsSync(publicDir)) {
+            fs.mkdirSync(publicDir, { recursive: true });
+          }
+          
+          const xmlFilePath = path.join(publicDir, "epg.xml");
+          fs.writeFileSync(xmlFilePath, xml, "utf-8");
+          
+          const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+          const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+          const xmlUrl = `${protocol}://${host}/epg.xml`;
+          
+          await storage.updateEpgConfig({
+            lastGenerated: new Date().toISOString(),
+            xmlUrl,
+          });
+        }
+      } catch (epgError) {
+        console.error("Error auto-generating EPG:", epgError);
+      }
+      
       res.json(source);
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -374,6 +534,38 @@ export async function registerRoutes(
     if (!deleted) {
       return res.status(404).json({ error: "Fuente externa no encontrada" });
     }
+    
+    // Regenerate EPG automatically
+    try {
+      const allChannels = await storage.getChannels();
+      const activeChannels = allChannels.filter(c => c.isActive);
+      const allSources = await storage.getExternalSources();
+      const activeSources = allSources.filter(s => s.isActive);
+      
+      if (activeChannels.length > 0 || activeSources.length > 0) {
+        const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
+        
+        const publicDir = path.join(process.cwd(), "client", "public");
+        if (!fs.existsSync(publicDir)) {
+          fs.mkdirSync(publicDir, { recursive: true });
+        }
+        
+        const xmlFilePath = path.join(publicDir, "epg.xml");
+        fs.writeFileSync(xmlFilePath, xml, "utf-8");
+        
+        const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+        const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+        const xmlUrl = `${protocol}://${host}/epg.xml`;
+        
+        await storage.updateEpgConfig({
+          lastGenerated: new Date().toISOString(),
+          xmlUrl,
+        });
+      }
+    } catch (epgError) {
+      console.error("Error auto-generating EPG:", epgError);
+    }
+    
     res.status(204).send();
   });
 
