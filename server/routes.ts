@@ -680,61 +680,46 @@ export async function registerRoutes(
     }
   });
 
-  // EPG auto-regeneration interval in minutes (regenerate if older than this)
-  const EPG_CACHE_MINUTES = 30;
-
+  // EPG regenerates on every visit to ensure fresh data
   app.get("/epg.xml", async (req: Request, res: Response) => {
     try {
       const publicDir = path.join(process.cwd(), "client", "public");
       const xmlFilePath = path.join(publicDir, "epg.xml");
       
-      // Check if we need to regenerate
-      let needsRegeneration = true;
+      // Always regenerate EPG with all active channels and sources
+      const allChannels = await storage.getChannels();
+      const activeChannels = allChannels.filter(c => c.isActive);
+      const allSources = await storage.getExternalSources();
+      const activeSources = allSources.filter(s => s.isActive);
       
-      if (fs.existsSync(xmlFilePath)) {
-        const stats = fs.statSync(xmlFilePath);
-        const fileAge = (Date.now() - stats.mtimeMs) / 1000 / 60; // age in minutes
-        needsRegeneration = fileAge > EPG_CACHE_MINUTES;
-      }
-      
-      if (needsRegeneration) {
-        // Regenerate EPG with all active channels and sources
-        const allChannels = await storage.getChannels();
-        const activeChannels = allChannels.filter(c => c.isActive);
-        const allSources = await storage.getExternalSources();
-        const activeSources = allSources.filter(s => s.isActive);
+      if (activeChannels.length > 0 || activeSources.length > 0) {
+        const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
         
-        if (activeChannels.length > 0 || activeSources.length > 0) {
-          const xml = await generateEpgXmlWithExternal(activeChannels, activeSources);
-          
-          if (!fs.existsSync(publicDir)) {
-            fs.mkdirSync(publicDir, { recursive: true });
-          }
-          
-          fs.writeFileSync(xmlFilePath, xml, "utf-8");
-          
-          const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
-          const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
-          const xmlUrl = `${protocol}://${host}/epg.xml`;
-          
-          await storage.updateEpgConfig({
-            lastGenerated: new Date().toISOString(),
-            xmlUrl,
-          });
+        if (!fs.existsSync(publicDir)) {
+          fs.mkdirSync(publicDir, { recursive: true });
         }
-      }
-      
-      if (!fs.existsSync(xmlFilePath)) {
-        // No channels or sources, return empty EPG
-        const emptyXml = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv generator-info-name="EPG Manager"></tv>\n';
+        
+        fs.writeFileSync(xmlFilePath, xml, "utf-8");
+        
+        const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
+        const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
+        const xmlUrl = `${protocol}://${host}/epg.xml`;
+        
+        await storage.updateEpgConfig({
+          lastGenerated: new Date().toISOString(),
+          xmlUrl,
+        });
+        
         res.setHeader("Content-Type", "application/xml");
         res.setHeader("Cache-Control", "no-cache");
-        return res.send(emptyXml);
+        return res.send(xml);
       }
       
+      // No channels or sources, return empty EPG
+      const emptyXml = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE tv SYSTEM "xmltv.dtd">\n<tv generator-info-name="EPG Manager"></tv>\n';
       res.setHeader("Content-Type", "application/xml");
       res.setHeader("Cache-Control", "no-cache");
-      res.sendFile(xmlFilePath);
+      return res.send(emptyXml);
     } catch (error) {
       console.error("Error serving EPG:", error);
       res.status(500).send("Error generating EPG");

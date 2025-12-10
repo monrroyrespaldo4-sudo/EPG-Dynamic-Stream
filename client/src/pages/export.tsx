@@ -236,9 +236,9 @@ export default function ExportPage() {
                 <RefreshCw className="h-5 w-5 text-blue-500" />
               </div>
               <div>
-                <h4 className="font-medium text-foreground">Auto-actualización</h4>
+                <h4 className="font-medium text-foreground">Siempre Actualizado</h4>
                 <p className="text-sm text-muted-foreground">
-                  Se regenera cada 30 minutos automáticamente
+                  Se regenera automáticamente en cada visita a la URL
                 </p>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function ExportPage() {
       {totalSources > 0 && (
         <div className="text-center text-sm text-muted-foreground">
           <p>
-            El EPG incluye {totalSources} fuente{totalSources !== 1 ? "s" : ""} activa{totalSources !== 1 ? "s" : ""} y se actualiza automáticamente al visitar la URL o cada 30 minutos.
+            El EPG incluye {totalSources} fuente{totalSources !== 1 ? "s" : ""} activa{totalSources !== 1 ? "s" : ""} y se regenera automáticamente cada vez que se visita la URL.
           </p>
         </div>
       )}
