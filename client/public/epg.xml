@@ -1,4 +1,884 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tv SYSTEM "xmltv.dtd">
 <tv generator-info-name="EPG Manager" generator-info-url="https://epg-manager.replit.app">
+  <channel id="chv">
+    <display-name>Chilevisión</display-name>
+  </channel>
+  <channel id="13cultura">
+    <display-name>13 Cultura</display-name>
+  </channel>
+  <programme start="20251206010000 +0000" stop="20251206033000 +0000" channel="chv">
+    <title lang="es">La divina comida</title>
+    <desc lang="es">Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.</desc>
+    <category lang="es">Cocina</category>
+  </programme>
+  <programme start="20251206033000 +0000" stop="20251206050000 +0000" channel="chv">
+    <title lang="es">Minas al poder</title>
+    <desc lang="es">Programa en que diversas comediantes hablarán de la contingencia y también los problemas que aquejan a las mujeres, siempre en tono de humor.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251206050000 +0000" stop="20251206060000 +0000" channel="chv">
+    <title lang="es">El club de la comedia</title>
+    <desc lang="es">Disfruta de este programa de humor donde reirás a carcajadas con los monólogos, sketch y nuevas imitaciones al puro estilo de &quot; El Club de la Comedia&quot;.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251206060000 +0000" stop="20251206070000 +0000" channel="chv">
+    <title lang="es">Tu hora Nickelodeon</title>
+    <desc lang="es">Bloque de monitos de Nickelodeon.</desc>
+    <category lang="es">Animación</category>
+  </programme>
+  <programme start="20251206070000 +0000" stop="20251206080000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251206080000 +0000" stop="20251206083000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251206083000 +0000" stop="20251206130000 +0000" channel="chv">
+    <title lang="es">CHV Noticias AM, fin de semana</title>
+    <desc lang="es">Rafael Cavada hace un repaso con todas las informaciones de la semana, de manera entretenida y con información en vivo.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251206130000 +0000" stop="20251206144500 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251206144500 +0000" stop="20251206151500 +0000" channel="chv">
+    <title lang="es">Tercer Tiempo</title>
+    <desc lang="es">Un programa que repasa lo más destacado de los torneos transmitidos por Chilevisión.</desc>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20251206151500 +0000" stop="20251206180000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251206180000 +0000" stop="20251206202500 +0000" channel="chv">
+    <title lang="es">Final Campeonato Femenino - Colo-Colo vs. Universidad de Chile</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20251206202500 +0000" stop="20251206205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251206205000 +0000" stop="20251206210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251206210000 +0000" stop="20251206221000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251206221000 +0000" stop="20251206221500 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251206221500 +0000" stop="20251207010000 +0000" channel="chv">
+    <title lang="es">La divina comida</title>
+    <desc lang="es">Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.</desc>
+    <category lang="es">Cocina</category>
+  </programme>
+  <programme start="20251207010000 +0000" stop="20251207033000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile - Lo mejor</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251207033000 +0000" stop="20251207050000 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251207050000 +0000" stop="20251207054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251207054000 +0000" stop="20251207064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251207060000 +0000" stop="20251207070000 +0000" channel="chv">
+    <title lang="es">Tu hora Nickelodeon</title>
+    <desc lang="es">Bloque de monitos de Nickelodeon.</desc>
+    <category lang="es">Animación</category>
+  </programme>
+  <programme start="20251207070000 +0000" stop="20251207080000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251207080000 +0000" stop="20251207083000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251207083000 +0000" stop="20251207130000 +0000" channel="chv">
+    <title lang="es">CHV Noticias AM, fin de semana</title>
+    <desc lang="es">Rafael Cavada hace un repaso con todas las informaciones de la semana, de manera entretenida y con información en vivo.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251207130000 +0000" stop="20251207150000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251207150000 +0000" stop="20251207190000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251207190000 +0000" stop="20251207194500 +0000" channel="chv">
+    <title lang="es">Karol G: La Premiere</title>
+    <desc lang="es">Una presentación especial de la cantante urbana Karol G, que compartirá material visual de su reciente álbum, &quot;Tropicoqueta&quot;.</desc>
+    <category lang="es">Música</category>
+  </programme>
+  <programme start="20251207194500 +0000" stop="20251207202500 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251207202500 +0000" stop="20251207205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251207205000 +0000" stop="20251207210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251207210000 +0000" stop="20251207222500 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251207222500 +0000" stop="20251207223000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251207223000 +0000" stop="20251208010000 +0000" channel="chv">
+    <title lang="es">Primer Plano</title>
+    <desc lang="es">Los mejores momentos, entrevistas, fotos, notas y escándalos del &quot;Estelar de la Farándula&quot; que marcan pauta en el mundo del entretenimiento.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251208004000 +0000" stop="20251208014000 +0000" channel="chv">
+    <title lang="es">El VAR-After del baile</title>
+    <desc lang="es">Espacio en que analizarán sin filtro cada presentación, las polémicas y la reacción del eliminado de Fiebre de Baile.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251208014000 +0000" stop="20251208031500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251208031500 +0000" stop="20251208050000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251208050000 +0000" stop="20251208054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251208054000 +0000" stop="20251208064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251208070000 +0000" stop="20251208080000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251208080000 +0000" stop="20251208090000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251208090000 +0000" stop="20251208130000 +0000" channel="chv">
+    <title lang="es">Contigo en la mañana</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251208130000 +0000" stop="20251208153000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251208153000 +0000" stop="20251208173000 +0000" channel="chv">
+    <title lang="es">Contigo en directo</title>
+    <desc lang="es">Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251208173000 +0000" stop="20251208190000 +0000" channel="chv">
+    <title lang="es">Plan perfecto</title>
+    <desc lang="es">Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251208190000 +0000" stop="20251208202500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251208202500 +0000" stop="20251208205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251208205000 +0000" stop="20251208210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251208205000 +0000" stop="20251208210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251208210000 +0000" stop="20251209205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251208210000 +0000" stop="20251208222000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251208222000 +0000" stop="20251208222500 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251208222500 +0000" stop="20251209004000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251209003000 +0000" stop="20251209004000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251209004000 +0000" stop="20251209031500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251209031500 +0000" stop="20251209050000 +0000" channel="chv">
+    <title lang="es">La divina comida</title>
+    <desc lang="es">Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.</desc>
+    <category lang="es">Cocina</category>
+  </programme>
+  <programme start="20251209050000 +0000" stop="20251209054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251209054000 +0000" stop="20251209064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251209054500 +0000" stop="20251209063000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251209063000 +0000" stop="20251209080000 +0000" channel="chv">
+    <title lang="es">Contigo CHV Noticias AM</title>
+    <desc lang="es">Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251209080000 +0000" stop="20251209130000 +0000" channel="chv">
+    <title lang="es">Contigo en la mañana</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251209130000 +0000" stop="20251209153000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251209153000 +0000" stop="20251209174500 +0000" channel="chv">
+    <title lang="es">Contigo en directo</title>
+    <desc lang="es">Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251209174500 +0000" stop="20251209193000 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251209193000 +0000" stop="20251209200000 +0000" channel="chv">
+    <title lang="es">Previa debate</title>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251209200000 +0000" stop="20251209205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251209205000 +0000" stop="20251209210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251209210000 +0000" stop="20251209233000 +0000" channel="chv">
+    <title lang="es">Debate Presidencial ANATEL 2025</title>
+    <desc lang="es">Los candidatos Jeannette Jara y José Antonio Kast, se enfentarán en un último debate televisado antes de las elecciones presidenciales de segunda vuelta.</desc>
+    <category lang="es">Evento</category>
+  </programme>
+  <programme start="20251209233000 +0000" stop="20251210003000 +0000" channel="chv">
+    <title lang="es">Post debate</title>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251210004000 +0000" stop="20251210014000 +0000" channel="chv">
+    <title lang="es">El VAR-After del baile</title>
+    <desc lang="es">Espacio en que analizarán sin filtro cada presentación, las polémicas y la reacción del eliminado de Fiebre de Baile.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251210014000 +0000" stop="20251210031500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251210031500 +0000" stop="20251210050000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251210050000 +0000" stop="20251210054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251210054000 +0000" stop="20251210064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251210054500 +0000" stop="20251210063000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251210063000 +0000" stop="20251210080000 +0000" channel="chv">
+    <title lang="es">Contigo CHV Noticias AM</title>
+    <desc lang="es">Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251210080000 +0000" stop="20251210130000 +0000" channel="chv">
+    <title lang="es">Contigo en la mañana</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251210130000 +0000" stop="20251210153000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251210153000 +0000" stop="20251210173000 +0000" channel="chv">
+    <title lang="es">Contigo en directo</title>
+    <desc lang="es">Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251210173000 +0000" stop="20251210190000 +0000" channel="chv">
+    <title lang="es">Plan perfecto</title>
+    <desc lang="es">Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251210190000 +0000" stop="20251210202500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251210202500 +0000" stop="20251210205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251210205000 +0000" stop="20251210210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251210210000 +0000" stop="20251210222000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251210222000 +0000" stop="20251210222500 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251210222500 +0000" stop="20251211004000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251210231030 +0000" stop="20251211000011 +0000" channel="13cultura">
+    <title lang="es">Cultura Indómita | Capítulo 7 | San Francisco El Alto, Guatemala</title>
+  </programme>
+  <programme start="20251211000012 +0000" stop="20251211005259 +0000" channel="13cultura">
+    <title lang="es">Cultura Salvaje | Capítulo 01</title>
+  </programme>
+  <programme start="20251211004500 +0000" stop="20251211031500 +0000" channel="chv">
+    <title lang="es">Detrás del muro, lo mejor</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251211005300 +0000" stop="20251211015912 +0000" channel="13cultura">
+    <title lang="es">Tiempos de Barrio | T1 | La legua</title>
+    <desc lang="es">Loreto Aravena recorre diferentes barrios de Chile para dar a conocer sus costumbres y tradiciones.</desc>
+    <category lang="es">travel-tourism</category>
+  </programme>
+  <programme start="20251211015912 +0000" stop="20251211025530 +0000" channel="13cultura">
+    <title lang="es">Lugares que hablan | La Tirana</title>
+  </programme>
+  <programme start="20251211025531 +0000" stop="20251211040822 +0000" channel="13cultura">
+    <title lang="es">La Ruta de la Patagonia | Capítulo 09</title>
+  </programme>
+  <programme start="20251211031500 +0000" stop="20251211043000 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251211040823 +0000" stop="20251211050021 +0000" channel="13cultura">
+    <title lang="es">Cultura Indómita | Capítulo 7 | San Francisco El Alto, Guatemala</title>
+  </programme>
+  <programme start="20251211043000 +0000" stop="20251211054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251211050022 +0000" stop="20251211055309 +0000" channel="13cultura">
+    <title lang="es">Cultura Salvaje | Capítulo 01</title>
+  </programme>
+  <programme start="20251211054000 +0000" stop="20251211064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251211054500 +0000" stop="20251211063000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251211055309 +0000" stop="20251211065921 +0000" channel="13cultura">
+    <title lang="es">Tiempos de Barrio | T1 | La legua</title>
+    <desc lang="es">Loreto Aravena recorre diferentes barrios de Chile para dar a conocer sus costumbres y tradiciones.</desc>
+    <category lang="es">travel-tourism</category>
+  </programme>
+  <programme start="20251211063000 +0000" stop="20251211080000 +0000" channel="chv">
+    <title lang="es">Contigo CHV Noticias AM</title>
+    <desc lang="es">Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251211065921 +0000" stop="20251211075540 +0000" channel="13cultura">
+    <title lang="es">Lugares que hablan | La Tirana</title>
+  </programme>
+  <programme start="20251211075540 +0000" stop="20251211090832 +0000" channel="13cultura">
+    <title lang="es">La Ruta de la Patagonia | Capítulo 09</title>
+  </programme>
+  <programme start="20251211080000 +0000" stop="20251211130000 +0000" channel="chv">
+    <title lang="es">Contigo en la mañana</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251211090832 +0000" stop="20251211100030 +0000" channel="13cultura">
+    <title lang="es">Cultura Indómita | Capítulo 7 | San Francisco El Alto, Guatemala</title>
+  </programme>
+  <programme start="20251211100031 +0000" stop="20251211110428 +0000" channel="13cultura">
+    <title lang="es">Tiempos de Barrio | T1 | La legua</title>
+    <desc lang="es">Loreto Aravena recorre diferentes barrios de Chile para dar a conocer sus costumbres y tradiciones.</desc>
+    <category lang="es">travel-tourism</category>
+  </programme>
+  <programme start="20251211110428 +0000" stop="20251211120045 +0000" channel="13cultura">
+    <title lang="es">Lugares que hablan | La Tirana</title>
+  </programme>
+  <programme start="20251211120045 +0000" stop="20251211131335 +0000" channel="13cultura">
+    <title lang="es">La Ruta de la Patagonia | Capítulo 09</title>
+  </programme>
+  <programme start="20251211130000 +0000" stop="20251211153000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251211131335 +0000" stop="20251211140531 +0000" channel="13cultura">
+    <title lang="es">Cultura Indómita | Capítulo 7 | San Francisco El Alto, Guatemala</title>
+  </programme>
+  <programme start="20251211140531 +0000" stop="20251211145817 +0000" channel="13cultura">
+    <title lang="es">Cultura Salvaje | Capítulo 01</title>
+  </programme>
+  <programme start="20251211145817 +0000" stop="20251211160427 +0000" channel="13cultura">
+    <title lang="es">Tiempos de Barrio | T1 | La legua</title>
+    <desc lang="es">Loreto Aravena recorre diferentes barrios de Chile para dar a conocer sus costumbres y tradiciones.</desc>
+    <category lang="es">travel-tourism</category>
+  </programme>
+  <programme start="20251211153000 +0000" stop="20251211173000 +0000" channel="chv">
+    <title lang="es">Contigo en directo</title>
+    <desc lang="es">Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251211160427 +0000" stop="20251211170044 +0000" channel="13cultura">
+    <title lang="es">Lugares que hablan | La Tirana</title>
+  </programme>
+  <programme start="20251211170044 +0000" stop="20251211181334 +0000" channel="13cultura">
+    <title lang="es">La Ruta de la Patagonia | Capítulo 09</title>
+  </programme>
+  <programme start="20251211173000 +0000" stop="20251211190000 +0000" channel="chv">
+    <title lang="es">Plan perfecto</title>
+    <desc lang="es">Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251211181334 +0000" stop="20251211190530 +0000" channel="13cultura">
+    <title lang="es">Cultura Indómita | Capítulo 7 | San Francisco El Alto, Guatemala</title>
+  </programme>
+  <programme start="20251211190000 +0000" stop="20251211202500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251211190530 +0000" stop="20251211195816 +0000" channel="13cultura">
+    <title lang="es">Cultura Salvaje | Capítulo 01</title>
+  </programme>
+  <programme start="20251211195816 +0000" stop="20251211210426 +0000" channel="13cultura">
+    <title lang="es">Tiempos de Barrio | T1 | La legua</title>
+    <desc lang="es">Loreto Aravena recorre diferentes barrios de Chile para dar a conocer sus costumbres y tradiciones.</desc>
+    <category lang="es">travel-tourism</category>
+  </programme>
+  <programme start="20251211202500 +0000" stop="20251211205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251211205000 +0000" stop="20251211210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251211210000 +0000" stop="20251211223000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251211210426 +0000" stop="20251211220043 +0000" channel="13cultura">
+    <title lang="es">Lugares que hablan | La Tirana</title>
+  </programme>
+  <programme start="20251211220043 +0000" stop="20251211231333 +0000" channel="13cultura">
+    <title lang="es">La Ruta de la Patagonia | Capítulo 09</title>
+  </programme>
+  <programme start="20251211223000 +0000" stop="20251211223500 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251211223500 +0000" stop="20251212004500 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251212004500 +0000" stop="20251212030000 +0000" channel="chv">
+    <title lang="es">Podemos hablar, lo mejor</title>
+    <desc lang="es">Tal como lo dice su nombre, &quot;Podemos Hablar&quot; es un programa de conversación en donde seis personalidades de distintos ámbitos (político, espectáculo, deportes, entre otras), convergen en un espacio físico donde intercambian opiniones sobre temas variados y experiencias personales.</desc>
+    <category lang="es">Talk Show</category>
+  </programme>
+  <programme start="20251212030000 +0000" stop="20251212043000 +0000" channel="chv">
+    <title lang="es">La Hermandad</title>
+    <desc lang="es">Un grupo de expertos en sucesos paranormales investiga casos que no tienen explicación aparente para dilucidar si lo que los motiva tiene una causa racional y científica o, por el contrario, se trata de un fenómeno indescifrable.</desc>
+    <category lang="es">Otros</category>
+  </programme>
+  <programme start="20251212043000 +0000" stop="20251212053000 +0000" channel="chv">
+    <title lang="es">Teatro en Chilevision</title>
+    <desc lang="es">Programa en donde se acerca el teatro al público televidente, presentando comedias por parte de un elenco estable e invitados.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251212054500 +0000" stop="20251212063000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251212063000 +0000" stop="20251212080000 +0000" channel="chv">
+    <title lang="es">Contigo CHV Noticias AM</title>
+    <desc lang="es">Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251212080000 +0000" stop="20251212130000 +0000" channel="chv">
+    <title lang="es">Contigo en la mañana</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251212130000 +0000" stop="20251212153000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251212153000 +0000" stop="20251212173000 +0000" channel="chv">
+    <title lang="es">Contigo en directo</title>
+    <desc lang="es">Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251212173000 +0000" stop="20251212190000 +0000" channel="chv">
+    <title lang="es">Plan perfecto</title>
+    <desc lang="es">Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251212190000 +0000" stop="20251212202500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251212202500 +0000" stop="20251212221500 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251212221500 +0000" stop="20251212223000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251212223000 +0000" stop="20251213004500 +0000" channel="chv">
+    <title lang="es">Podemos hablar</title>
+    <desc lang="es">Tal como lo dice su nombre, &quot;Podemos Hablar&quot; es un programa de conversación en donde seis personalidades de distintos ámbitos (político, espectáculo, deportes, entre otras), convergen en un espacio físico donde intercambian opiniones sobre temas variados y experiencias personales.</desc>
+    <category lang="es">Talk Show</category>
+  </programme>
+  <programme start="20251213010000 +0000" stop="20251213033000 +0000" channel="chv">
+    <title lang="es">La divina comida</title>
+    <desc lang="es">Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.</desc>
+    <category lang="es">Cocina</category>
+  </programme>
+  <programme start="20251213033000 +0000" stop="20251213050000 +0000" channel="chv">
+    <title lang="es">Minas al poder</title>
+    <desc lang="es">Programa en que diversas comediantes hablarán de la contingencia y también los problemas que aquejan a las mujeres, siempre en tono de humor.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251213050000 +0000" stop="20251213060000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251213060000 +0000" stop="20251213070000 +0000" channel="chv">
+    <title lang="es">Tu hora Nickelodeon</title>
+    <desc lang="es">Bloque de monitos de Nickelodeon.</desc>
+    <category lang="es">Animación</category>
+  </programme>
+  <programme start="20251213070000 +0000" stop="20251213080000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251213080000 +0000" stop="20251213083000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251213083000 +0000" stop="20251213130000 +0000" channel="chv">
+    <title lang="es">CHV Noticias AM, fin de semana</title>
+    <desc lang="es">Rafael Cavada hace un repaso con todas las informaciones de la semana, de manera entretenida y con información en vivo.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251213130000 +0000" stop="20251213150000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251213150000 +0000" stop="20251213180000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251213180000 +0000" stop="20251213203000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251213203000 +0000" stop="20251213221000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251213221000 +0000" stop="20251213221500 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251213221500 +0000" stop="20251214010000 +0000" channel="chv">
+    <title lang="es">La divina comida</title>
+    <desc lang="es">Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.</desc>
+    <category lang="es">Cocina</category>
+  </programme>
+  <programme start="20251214010000 +0000" stop="20251214033000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile - Lo mejor</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251214033000 +0000" stop="20251214050000 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251214050000 +0000" stop="20251214054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251214054000 +0000" stop="20251214064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251214060000 +0000" stop="20251214063000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251214063000 +0000" stop="20251214080000 +0000" channel="chv">
+    <title lang="es">CHV Noticias AM</title>
+    <desc lang="es">La actualidad nacional e internacional presentada por los mejores profesionales del periodismo actual.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251214080000 +0000" stop="20251214130000 +0000" channel="chv">
+    <title lang="es">Elección AM Segunda Vuelta</title>
+    <desc lang="es">Cobertura especial a la elección de segunda vuelta, donde definirá el próximo presidente de Chile.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251214130000 +0000" stop="20251214150000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251214150000 +0000" stop="20251214173000 +0000" channel="chv">
+    <title lang="es">Contigo en elecciones</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251214173000 +0000" stop="20251214200000 +0000" channel="chv">
+    <title lang="es">Elección AM Segunda Vuelta</title>
+    <desc lang="es">Cobertura especial a la elección de segunda vuelta, donde definirá el próximo presidente de Chile.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251214200000 +0000" stop="20251214222500 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251214222500 +0000" stop="20251214223000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251214223000 +0000" stop="20251215010000 +0000" channel="chv">
+    <title lang="es">Primer Plano</title>
+    <desc lang="es">Los mejores momentos, entrevistas, fotos, notas y escándalos del &quot;Estelar de la Farándula&quot; que marcan pauta en el mundo del entretenimiento.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251215004000 +0000" stop="20251215014000 +0000" channel="chv">
+    <title lang="es">El VAR-After del baile</title>
+    <desc lang="es">Espacio en que analizarán sin filtro cada presentación, las polémicas y la reacción del eliminado de Fiebre de Baile.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251215014000 +0000" stop="20251215031500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251215031500 +0000" stop="20251215050000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251215050000 +0000" stop="20251215054000 +0000" channel="chv">
+    <title lang="es">Detrás del muro</title>
+    <desc lang="es">El elenco de &quot;Detrás del Muro&quot; vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.</desc>
+    <category lang="es">Humor</category>
+  </programme>
+  <programme start="20251215054000 +0000" stop="20251215064000 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251215070000 +0000" stop="20251215080000 +0000" channel="chv">
+    <title lang="es">Sabingo</title>
+    <desc lang="es">Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.</desc>
+    <category lang="es">Cultura</category>
+  </programme>
+  <programme start="20251215080000 +0000" stop="20251215090000 +0000" channel="chv">
+    <title lang="es">Primera página</title>
+    <desc lang="es">Resumen noticioso para iniciar el día con ánimo y bien informado.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251215090000 +0000" stop="20251215130000 +0000" channel="chv">
+    <title lang="es">Contigo en la mañana</title>
+    <desc lang="es">Información y entretención para mantenerse al día sobre los temas que mueven la vida.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251215130000 +0000" stop="20251215153000 +0000" channel="chv">
+    <title lang="es">CHV Noticias tarde</title>
+    <desc lang="es">La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251215153000 +0000" stop="20251215173000 +0000" channel="chv">
+    <title lang="es">Contigo en directo</title>
+    <desc lang="es">Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.</desc>
+    <category lang="es">Magazine</category>
+  </programme>
+  <programme start="20251215173000 +0000" stop="20251215190000 +0000" channel="chv">
+    <title lang="es">Plan perfecto</title>
+    <desc lang="es">Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251215190000 +0000" stop="20251215202500 +0000" channel="chv">
+    <title lang="es">¿Cuánto vale el Show?</title>
+    <desc lang="es">Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
+  <programme start="20251215202500 +0000" stop="20251215205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251215205000 +0000" stop="20251215210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251215205000 +0000" stop="20251215210000 +0000" channel="chv">
+    <title lang="es">Franja electoral</title>
+    <desc lang="es">Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.</desc>
+    <category lang="es">Política y sociedad</category>
+  </programme>
+  <programme start="20251215210000 +0000" stop="20251216205000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251215210000 +0000" stop="20251215222000 +0000" channel="chv">
+    <title lang="es">CHV Noticias central</title>
+    <desc lang="es">Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.</desc>
+    <category lang="es">Noticias</category>
+  </programme>
+  <programme start="20251215222000 +0000" stop="20251215222500 +0000" channel="chv">
+    <title lang="es">El tiempo</title>
+    <desc lang="es">Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.</desc>
+    <category lang="es">Clima</category>
+  </programme>
+  <programme start="20251215222500 +0000" stop="20251216004000 +0000" channel="chv">
+    <title lang="es">Fiebre de baile</title>
+    <desc lang="es">Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado.</desc>
+    <category lang="es">Entretención</category>
+  </programme>
 </tv>
