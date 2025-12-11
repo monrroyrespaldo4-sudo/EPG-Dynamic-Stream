@@ -23,7 +23,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { Plus, Search, Pencil, Trash2, Globe, Image, Play, Loader2 } from "lucide-react";
+import { Plus, Search, Pencil, Trash2, Globe, Image, Play, Loader2, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { ExternalSourceDialog } from "@/components/external-source-dialog";
@@ -221,6 +221,7 @@ export default function ExternalSourcesPage() {
                     <TableHead>Nombre</TableHead>
                     <TableHead className="hidden md:table-cell">ID Canal</TableHead>
                     <TableHead className="hidden lg:table-cell">URL</TableHead>
+                    <TableHead className="hidden sm:table-cell w-[100px]">Zona Horaria</TableHead>
                     <TableHead className="w-[80px]">Activo</TableHead>
                     <TableHead className="w-[140px] text-right">Acciones</TableHead>
                   </TableRow>
@@ -252,6 +253,18 @@ export default function ExternalSourcesPage() {
                       </TableCell>
                       <TableCell className="hidden lg:table-cell text-sm text-muted-foreground max-w-[200px] truncate">
                         {source.url}
+                      </TableCell>
+                      <TableCell className="hidden sm:table-cell">
+                        <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                          <Clock className="h-3 w-3" />
+                          <span>
+                            {source.timezoneOffset === 0
+                              ? "Sin ajuste"
+                              : source.timezoneOffset > 0
+                              ? `+${source.timezoneOffset}h`
+                              : `${source.timezoneOffset}h`}
+                          </span>
+                        </div>
                       </TableCell>
                       <TableCell>
                         <Switch

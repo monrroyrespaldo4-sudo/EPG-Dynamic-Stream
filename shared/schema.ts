@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { pgTable, text, boolean, jsonb, serial } from "drizzle-orm/pg-core";
+import { pgTable, text, boolean, jsonb, serial, integer } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 
 export const channels = pgTable("channels", {
@@ -20,6 +20,7 @@ export const externalSources = pgTable("external_sources", {
   channelId: text("channel_id").notNull(),
   logoUrl: text("logo_url"),
   isActive: boolean("is_active").notNull().default(true),
+  timezoneOffset: integer("timezone_offset").notNull().default(0),
 });
 
 export const epgConfigs = pgTable("epg_configs", {
@@ -62,6 +63,7 @@ export const externalEpgSourceSchema = z.object({
   channelId: z.string().min(1, "El ID del canal es requerido"),
   logoUrl: z.string().url("URL de logo inválida").optional().nullable(),
   isActive: z.boolean().default(true),
+  timezoneOffset: z.number().min(-12).max(12).default(0),
 });
 
 export interface ExternalEpgProgram {

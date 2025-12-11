@@ -126,6 +126,14 @@ async function generateEpgXmlWithExternal(
     const epgData = await fetchExternalEpgData(source.url);
     if (!epgData) continue;
 
+    // Get timezone offset in hours (positive = add hours, negative = subtract hours)
+    const tzOffset = source.timezoneOffset || 0;
+    const applyOffset = (date: Date): Date => {
+      const result = new Date(date);
+      result.setHours(result.getHours() + tzOffset);
+      return result;
+    };
+
     if (isExternal13GoData(epgData)) {
       allChannels.push({
         channelId: source.channelId,
@@ -134,10 +142,14 @@ async function generateEpgXmlWithExternal(
       });
 
       for (const event of epgData.events) {
-        const startTime = new Date(event.beginTime);
-        const endTime = new Date(event.endTime);
+        let startTime = new Date(event.beginTime);
+        let endTime = new Date(event.endTime);
         
         if (isNaN(startTime.getTime()) || isNaN(endTime.getTime())) continue;
+
+        // Apply timezone correction
+        startTime = applyOffset(startTime);
+        endTime = applyOffset(endTime);
 
         let title = event.title;
         if (event.episodeTitle && event.episodeTitle !== event.title) {
@@ -169,7 +181,7 @@ async function generateEpgXmlWithExternal(
           const time = parseTimeHM(prog.hora);
           if (!time) continue;
 
-          const startTime = new Date(diaDate);
+          let startTime = new Date(diaDate);
           startTime.setHours(time.hours, time.minutes, 0, 0);
 
           let endTime: Date;
@@ -189,6 +201,10 @@ async function generateEpgXmlWithExternal(
             endTime = new Date(startTime);
             endTime.setHours(endTime.getHours() + 1);
           }
+
+          // Apply timezone correction
+          startTime = applyOffset(startTime);
+          endTime = applyOffset(endTime);
 
           let title = prog.titulo;
           if (prog.capitulo) {

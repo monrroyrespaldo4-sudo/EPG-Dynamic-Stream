@@ -1,0 +1,1657 @@
+{
+    "channelName": "CHV",
+    "channelCode": 11, 
+    "dias": [
+        {
+            "fecha": "06-12-2025",
+            "diaSemana": "sabado",
+            "programas": [
+                {
+                    "hora": "06:00",
+                    "titulo": "Tu hora Nickelodeon",
+                    "capitulo": "",
+                    "descripcion": "Bloque de monitos de Nickelodeon.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_tuhoranickelodeon.jpg",
+                    "infoUrl": "",
+                    "genero": "Animación",
+                    "enVivo": false
+                },
+                {
+                    "hora": "07:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:30",
+                    "titulo": "CHV Noticias AM, fin de semana",
+                    "capitulo": "",
+                    "descripcion": "Rafael Cavada hace un repaso con todas las informaciones de la semana, de manera entretenida y con información en vivo.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiasam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "14:45",
+                    "titulo": "Tercer Tiempo",
+                    "capitulo": "",
+                    "descripcion": "Un programa que repasa lo más destacado de los torneos transmitidos por Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_tercertiempo.jpg",
+                    "infoUrl": "",
+                    "genero": "Deportes",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:15",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "18:00",
+                    "titulo": "Final Campeonato Femenino",
+                    "capitulo": "Colo-Colo vs. Universidad de Chile",
+                    "descripcion": "",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvdeportes.jpg",
+                    "infoUrl": "",
+                    "genero": "Deportes",
+                    "enVivo": true
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:10",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:15",
+                    "titulo": "La divina comida",
+                    "capitulo": "",
+                    "descripcion": "Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_ladivinacomida.jpg",
+                    "infoUrl": "",
+                    "genero": "Cocina",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:00",
+                    "titulo": "La divina comida",
+                    "capitulo": "",
+                    "descripcion": "Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_ladivinacomida.jpg",
+                    "infoUrl": "",
+                    "genero": "Cocina",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:30",
+                    "titulo": "Minas al poder",
+                    "capitulo": "",
+                    "descripcion": "Programa en que diversas comediantes hablarán de la contingencia y también los problemas que aquejan a las mujeres, siempre en tono de humor.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_minasalpoder.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "El club de la comedia",
+                    "capitulo": "",
+                    "descripcion": "Disfruta de este programa de humor donde reirás a carcajadas con los monólogos, sketch y nuevas imitaciones al puro estilo de \" El Club de la Comedia\".",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_elclubdelacomedia.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "07-12-2025",
+            "diaSemana": "domingo",
+            "programas": [
+                {
+                    "hora": "06:00",
+                    "titulo": "Tu hora Nickelodeon",
+                    "capitulo": "",
+                    "descripcion": "Bloque de monitos de Nickelodeon.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_tuhoranickelodeon.jpg",
+                    "infoUrl": "",
+                    "genero": "Animación",
+                    "enVivo": false
+                },
+                {
+                    "hora": "07:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:30",
+                    "titulo": "CHV Noticias AM, fin de semana",
+                    "capitulo": "",
+                    "descripcion": "Rafael Cavada hace un repaso con todas las informaciones de la semana, de manera entretenida y con información en vivo.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiasam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:00",
+                    "titulo": "Karol G: La Premiere",
+                    "capitulo": "",
+                    "descripcion": "Una presentación especial de la cantante urbana Karol G, que compartirá material visual de su reciente álbum, \"Tropicoqueta\".",
+                    "imagenUrl": "https://mmo.aiircdn.com/766/6852d85b601b4.jpg",
+                    "infoUrl": "",
+                    "genero": "Música",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:45",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:25",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:30",
+                    "titulo": "Primer Plano",
+                    "capitulo": "",
+                    "descripcion": "Los mejores momentos, entrevistas, fotos, notas y escándalos del \"Estelar de la Farándula\" que marcan pauta en el mundo del entretenimiento.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerplano.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:00",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "Lo mejor",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:30",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "08-12-2025",
+            "diaSemana": "lunes",
+            "programas": [
+                {
+                    "hora": "07:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "09:00",
+                    "titulo": "Contigo en la mañana",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:30",
+                    "titulo": "Contigo en directo",
+                    "capitulo": "",
+                    "descripcion": "Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoendirecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "17:30",
+                    "titulo": "Plan perfecto",
+                    "capitulo": "",
+                    "descripcion": "Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_planperfecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:00",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:20",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:25",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "00:40",
+                    "titulo": "El VAR-After del baile",
+                    "capitulo": "",
+                    "descripcion": "Espacio en que analizarán sin filtro cada presentación, las polémicas y la reacción del eliminado de Fiebre de Baile.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_varafter.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:40",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:15",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "09-12-2025",
+            "diaSemana": "martes",
+            "programas": [
+                {
+                    "hora": "05:45",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "06:30",
+                    "titulo": "Contigo CHV Noticias AM",
+                    "capitulo": "",
+                    "descripcion": "Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigochvam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Contigo en la mañana",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:30",
+                    "titulo": "Contigo en directo",
+                    "capitulo": "",
+                    "descripcion": "Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoendirecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "17:45",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:30",
+                    "titulo": "Previa debate",
+                    "capitulo": "",
+                    "descripcion": "",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticias.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "20:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "Debate Presidencial ANATEL 2025",
+                    "capitulo": "",
+                    "descripcion": "Los candidatos Jeannette Jara y José Antonio Kast, se enfentarán en un último debate televisado antes de las elecciones presidenciales de segunda vuelta.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_debatepresidencialanatel.jpg",
+                    "infoUrl": "",
+                    "genero": "Evento",
+                    "enVivo": true
+                },
+                {
+                    "hora": "23:30",
+                    "titulo": "Post debate",
+                    "capitulo": "",
+                    "descripcion": "",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticias.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "00:30",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "00:40",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:15",
+                    "titulo": "La divina comida",
+                    "capitulo": "",
+                    "descripcion": "Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_ladivinacomida.jpg",
+                    "infoUrl": "",
+                    "genero": "Cocina",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "10-12-2025",
+            "diaSemana": "miercoles",
+            "programas": [
+                {
+                    "hora": "05:45",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "06:30",
+                    "titulo": "Contigo CHV Noticias AM",
+                    "capitulo": "",
+                    "descripcion": "Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigochvam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Contigo en la mañana",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:30",
+                    "titulo": "Contigo en directo",
+                    "capitulo": "",
+                    "descripcion": "Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoendirecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "17:30",
+                    "titulo": "Plan perfecto",
+                    "capitulo": "",
+                    "descripcion": "Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_planperfecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:00",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:20",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:25",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "00:40",
+                    "titulo": "El VAR-After del baile",
+                    "capitulo": "",
+                    "descripcion": "Espacio en que analizarán sin filtro cada presentación, las polémicas y la reacción del eliminado de Fiebre de Baile.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_varafter.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:40",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:15",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "11-12-2025",
+            "diaSemana": "jueves",
+            "programas": [
+                {
+                    "hora": "05:45",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "06:30",
+                    "titulo": "Contigo CHV Noticias AM",
+                    "capitulo": "",
+                    "descripcion": "Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigochvam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Contigo en la mañana",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:30",
+                    "titulo": "Contigo en directo",
+                    "capitulo": "",
+                    "descripcion": "Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoendirecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "17:30",
+                    "titulo": "Plan perfecto",
+                    "capitulo": "",
+                    "descripcion": "Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_planperfecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:00",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:30",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:35",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "00:45",
+                    "titulo": "Detrás del muro, lo mejor",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:15",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "04:30",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "12-12-2025",
+            "diaSemana": "viernes",
+            "programas": [
+                {
+                    "hora": "05:45",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "06:30",
+                    "titulo": "Contigo CHV Noticias AM",
+                    "capitulo": "",
+                    "descripcion": "Es un noticiero cuyo principal objetivo es convertirse en la mejor compañía de aquellos que comienzan a levantarse y que necesitan salir informados de sus hogares.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigochvam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Contigo en la mañana",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:30",
+                    "titulo": "Contigo en directo",
+                    "capitulo": "",
+                    "descripcion": "Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoendirecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "17:30",
+                    "titulo": "Plan perfecto",
+                    "capitulo": "",
+                    "descripcion": "Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_planperfecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:00",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:15",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:30",
+                    "titulo": "Podemos hablar",
+                    "capitulo": "",
+                    "descripcion": "Tal como lo dice su nombre, \"Podemos Hablar\" es un programa de conversación en donde seis personalidades de distintos ámbitos (político, espectáculo, deportes, entre otras), convergen en un espacio físico donde intercambian opiniones sobre temas variados y experiencias personales.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_podemoshablar.jpg",
+                    "infoUrl": "",
+                    "genero": "Talk Show",
+                    "enVivo": false
+                },
+                {
+                    "hora": "00:45",
+                    "titulo": "Podemos hablar, lo mejor",
+                    "capitulo": "",
+                    "descripcion": "Tal como lo dice su nombre, \"Podemos Hablar\" es un programa de conversación en donde seis personalidades de distintos ámbitos (político, espectáculo, deportes, entre otras), convergen en un espacio físico donde intercambian opiniones sobre temas variados y experiencias personales.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_podemoshablar.jpg",
+                    "infoUrl": "",
+                    "genero": "Talk Show",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:00",
+                    "titulo": "La Hermandad",
+                    "capitulo": "",
+                    "descripcion": "Un grupo de expertos en sucesos paranormales investiga casos que no tienen explicación aparente para dilucidar si lo que los motiva tiene una causa racional y científica o, por el contrario, se trata de un fenómeno indescifrable.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_lahermandad.jpg",
+                    "infoUrl": "",
+                    "genero": "Otros",
+                    "enVivo": false
+                },
+                {
+                    "hora": "04:30",
+                    "titulo": "Teatro en Chilevision",
+                    "capitulo": "",
+                    "descripcion": "Programa en donde se acerca el teatro al público televidente, presentando comedias por parte de un elenco estable e invitados.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_teatroenchv.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "13-12-2025",
+            "diaSemana": "sabado",
+            "programas": [
+                {
+                    "hora": "06:00",
+                    "titulo": "Tu hora Nickelodeon",
+                    "capitulo": "",
+                    "descripcion": "Bloque de monitos de Nickelodeon.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_tuhoranickelodeon.jpg",
+                    "infoUrl": "",
+                    "genero": "Animación",
+                    "enVivo": false
+                },
+                {
+                    "hora": "07:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:30",
+                    "titulo": "CHV Noticias AM, fin de semana",
+                    "capitulo": "",
+                    "descripcion": "Rafael Cavada hace un repaso con todas las informaciones de la semana, de manera entretenida y con información en vivo.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiasam.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "18:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:30",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:10",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:15",
+                    "titulo": "La divina comida",
+                    "capitulo": "",
+                    "descripcion": "Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_ladivinacomida.jpg",
+                    "infoUrl": "",
+                    "genero": "Cocina",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:00",
+                    "titulo": "La divina comida",
+                    "capitulo": "",
+                    "descripcion": "Cada semana, cuatro famosos compiten por ver quién es el mejor anfitrión. Un show que combina elementos de cocina, celebridades y diversión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_ladivinacomida.jpg",
+                    "infoUrl": "",
+                    "genero": "Cocina",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:30",
+                    "titulo": "Minas al poder",
+                    "capitulo": "",
+                    "descripcion": "Programa en que diversas comediantes hablarán de la contingencia y también los problemas que aquejan a las mujeres, siempre en tono de humor.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_minasalpoder.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "14-12-2025",
+            "diaSemana": "domingo",
+            "programas": [
+                {
+                    "hora": "06:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "06:30",
+                    "titulo": "CHV Noticias AM",
+                    "capitulo": "",
+                    "descripcion": "La actualidad nacional e internacional presentada por los mejores profesionales del periodismo actual.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticias.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Elección AM Segunda Vuelta",
+                    "capitulo": "",
+                    "descripcion": "Cobertura especial a la elección de segunda vuelta, donde definirá el próximo presidente de Chile.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticias.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "15:00",
+                    "titulo": "Contigo en elecciones",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": true
+                },
+                {
+                    "hora": "17:30",
+                    "titulo": "Elección AM Segunda Vuelta",
+                    "capitulo": "",
+                    "descripcion": "Cobertura especial a la elección de segunda vuelta, donde definirá el próximo presidente de Chile.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticias.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "20:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": true
+                },
+                {
+                    "hora": "22:25",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:30",
+                    "titulo": "Primer Plano",
+                    "capitulo": "",
+                    "descripcion": "Los mejores momentos, entrevistas, fotos, notas y escándalos del \"Estelar de la Farándula\" que marcan pauta en el mundo del entretenimiento.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerplano.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:00",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "Lo mejor",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:30",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        },
+        {
+            "fecha": "15-12-2025",
+            "diaSemana": "lunes",
+            "programas": [
+                {
+                    "hora": "07:00",
+                    "titulo": "Sabingo",
+                    "capitulo": "",
+                    "descripcion": "Te acompañamos cada sábado y domingo con historias humanas, notas de viajes y sobre todo mucha entretención.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_sabingo.jpg",
+                    "infoUrl": "",
+                    "genero": "Cultura",
+                    "enVivo": false
+                },
+                {
+                    "hora": "08:00",
+                    "titulo": "Primera página",
+                    "capitulo": "",
+                    "descripcion": "Resumen noticioso para iniciar el día con ánimo y bien informado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_primerapagina.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "09:00",
+                    "titulo": "Contigo en la mañana",
+                    "capitulo": "",
+                    "descripcion": "Información y entretención para mantenerse al día sobre los temas que mueven la vida.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoenlamanana.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "13:00",
+                    "titulo": "CHV Noticias tarde",
+                    "capitulo": "",
+                    "descripcion": "La más completa información de los principales acontecimientos que están marcando la jornada, con despachos y móviles en directo desde el lugar de los hechos.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiastarde.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "15:30",
+                    "titulo": "Contigo en directo",
+                    "capitulo": "",
+                    "descripcion": "Análisis de la contingencia, con una amplia cobertura de los temas más relevantes del día a día.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_contigoendirecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Magazine",
+                    "enVivo": false
+                },
+                {
+                    "hora": "17:30",
+                    "titulo": "Plan perfecto",
+                    "capitulo": "",
+                    "descripcion": "Programa de abordará la actualidad del espectáculo, además de variadas secciones que acompañarán cada tarde con imperdibles historias.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_planperfecto.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "19:00",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:25",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "20:50",
+                    "titulo": "Franja electoral",
+                    "capitulo": "",
+                    "descripcion": "Emisión de propaganda política, donde los candidatos a segunda vuelta entregan sus propuestas a la ciudadanía, con miras a la elección de la segunda vuelta presidencial.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_franjaelectoral.jpg",
+                    "infoUrl": "",
+                    "genero": "Política y sociedad",
+                    "enVivo": false
+                },
+                {
+                    "hora": "21:00",
+                    "titulo": "CHV Noticias central",
+                    "capitulo": "",
+                    "descripcion": "Todas las noticias de Chile y el mundo tratadas con seriedad, rigurosidad, profundidad y objetividad, con los temas que de verdad le interesan a la gente y un punto de vista crítico e independiente.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_chvnoticiascentral.jpg",
+                    "infoUrl": "",
+                    "genero": "Noticias",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:20",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                },
+                {
+                    "hora": "22:25",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "00:40",
+                    "titulo": "El VAR-After del baile",
+                    "capitulo": "",
+                    "descripcion": "Espacio en que analizarán sin filtro cada presentación, las polémicas y la reacción del eliminado de Fiebre de Baile.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_varafter.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "01:40",
+                    "titulo": "¿Cuánto vale el Show?",
+                    "capitulo": "",
+                    "descripcion": "Programa de talentos donde los concursantes podrán mostrar sus más variadas habilidades para sorprender al jurado.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_cuantovaleelshow.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "03:15",
+                    "titulo": "Fiebre de baile",
+                    "capitulo": "",
+                    "descripcion": "Un programa de baile donde famosos compiten poniendo a prueba todos sus dotes dancisticos. Siempre evaluados por un estricto jurado",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_fiebredebaile.jpg",
+                    "infoUrl": "",
+                    "genero": "Entretención",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:00",
+                    "titulo": "Detrás del muro",
+                    "capitulo": "",
+                    "descripcion": "El elenco de \"Detrás del Muro\" vuelve recargado, para llenarte de risas y diversión de la mano de Kike Morandé.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_detrasdelmuro.jpg",
+                    "infoUrl": "",
+                    "genero": "Humor",
+                    "enVivo": false
+                },
+                {
+                    "hora": "05:40",
+                    "titulo": "El tiempo",
+                    "capitulo": "",
+                    "descripcion": "Conoce los detalles del tiempo a lo largo de todo el territorio nacional, con el informe metorológico completo junto a Chilevisión.",
+                    "imagenUrl": "/recursos/epg/landsc/landscape_pgm_eltiempochv.jpg",
+                    "infoUrl": "",
+                    "genero": "Clima",
+                    "enVivo": false
+                }
+            ]
+        }
+    ]
+}
+
