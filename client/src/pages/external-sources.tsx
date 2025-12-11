@@ -64,7 +64,7 @@ export default function ExternalSourcesPage() {
   });
 
   const updateMutation = useMutation({
-    mutationFn: async ({ id, data }: { id: string; data: Partial<InsertExternalEpgSource> }) => {
+    mutationFn: async ({ id, data }: { id: number; data: Partial<InsertExternalEpgSource> }) => {
       return apiRequest("PATCH", `/api/external-sources/${id}`, data);
     },
     onSuccess: () => {
@@ -86,7 +86,7 @@ export default function ExternalSourcesPage() {
   });
 
   const deleteMutation = useMutation({
-    mutationFn: async (id: string) => {
+    mutationFn: async (id: number) => {
       return apiRequest("DELETE", `/api/external-sources/${id}`);
     },
     onSuccess: () => {
@@ -108,7 +108,7 @@ export default function ExternalSourcesPage() {
   });
 
   const toggleActiveMutation = useMutation({
-    mutationFn: async ({ id, isActive }: { id: string; isActive: boolean }) => {
+    mutationFn: async ({ id, isActive }: { id: number; isActive: boolean }) => {
       return apiRequest("PATCH", `/api/external-sources/${id}`, { isActive });
     },
     onSuccess: () => {
@@ -117,8 +117,8 @@ export default function ExternalSourcesPage() {
   });
 
   const testMutation = useMutation({
-    mutationFn: async (id: string) => {
-      setTestingId(id);
+    mutationFn: async (id: number) => {
+      setTestingId(String(id));
       const response = await apiRequest("POST", `/api/external-sources/${id}/test`);
       return response.json();
     },

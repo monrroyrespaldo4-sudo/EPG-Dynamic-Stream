@@ -92,7 +92,7 @@ export function ExternalSourceDialog({
         channelId: source.channelId,
         logoUrl: source.logoUrl || "",
         isActive: source.isActive,
-        timezoneOffset: source.timezoneOffset || 0,
+        timezoneOffset: source.timezoneOffset ?? 0,
       });
     } else {
       form.reset({
@@ -106,8 +106,24 @@ export function ExternalSourceDialog({
     }
   }, [source, form, open]);
 
+  // Auto-detect TVDalDía URLs and suggest +3 timezone
+  const urlValue = form.watch("url");
+  useEffect(() => {
+    if (!source && urlValue) {
+      const isTvDalDia = urlValue.includes("tvdaldia.cl");
+      if (isTvDalDia && form.getValues("timezoneOffset") === 0) {
+        form.setValue("timezoneOffset", 3);
+      }
+    }
+  }, [urlValue, source, form]);
+
   const handleSubmit = (data: InsertExternalEpgSource) => {
-    onSubmit(data);
+    // Clean empty strings to null for optional URL fields
+    const cleanedData = {
+      ...data,
+      logoUrl: data.logoUrl?.trim() || null,
+    };
+    onSubmit(cleanedData);
   };
 
   return (
@@ -223,7 +239,7 @@ export function ExternalSourceDialog({
                     </SelectContent>
                   </Select>
                   <FormDescription>
-                    Ajusta las horas si la programación está adelantada o atrasada
+                    Para fuentes TVDalDía (Chile) usa +3 horas. Positivo adelanta, negativo atrasa.
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
