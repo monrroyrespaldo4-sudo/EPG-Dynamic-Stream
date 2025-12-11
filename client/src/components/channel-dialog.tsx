@@ -76,7 +76,13 @@ export function ChannelDialog({
   }, [channel, form, open]);
 
   const handleSubmit = (data: InsertChannel) => {
-    onSubmit(data);
+    // Clean empty strings to null for optional URL fields
+    const cleanedData = {
+      ...data,
+      logoUrl: data.logoUrl?.trim() || null,
+      programDescription: data.programDescription?.trim() || null,
+    };
+    onSubmit(cleanedData);
   };
 
   return (
